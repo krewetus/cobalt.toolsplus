@@ -1,0 +1,29 @@
+{
+    "name": "Cobalt.tools+",
+    "version": "0.1.15",
+    "description": "Addon that allows you to use cobalt.tools directly from other websites",
+    "manifest_version": 3,
+    "author": "shrimpo",
+    "permissions":[
+        "scripting",
+        "contextMenus",
+        "activeTab",
+        "tabs",
+        "webNavigation"],
+    "host_permissions": [
+        "http://*/*", 
+        "https://*/*",
+        "https://cobalt.tools/*"],
+    "icons": {
+        "16": "icons/plus-tiny.png",
+        "48": "icons/plus-small.png",
+        "128": "icons/plus-big.png"
+    },
+    "background": {
+        "service_worker": "bg.js"
+    },
+    "action":{
+        "default_popup": "popup.html",
+        "default_title": "Cobalt.tools+"
+    }
+}
